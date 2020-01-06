@@ -7,6 +7,9 @@
     <title>BINGO</title>
     <link rel="stylesheet" href="app.css">
     <link href="//db.onlinewebfonts.com/c/0801c08e5412f54e4b4e9ad146d83a12?family=Ink+Free" rel="stylesheet" type="text/css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.debug.js" integrity="sha384-NaWTHo/8YCBYJ59830LTz/P4aQZK1sS0SneOgAvhsIl3zBu8r9RevNg5lHCHAuQ/" crossorigin="anonymous"></script>
+    <script src="dist/jspdf.min.js"></script>
+    <script src="pdf.js"></script>
     <style>
         table {
         border-radius: 5px;
@@ -43,13 +46,13 @@
 <div class="hidden lg:flex lg:items-center lg:w-auto w-full" id="menu">
   <nav>
     <ul class="lg:flex items-center justify-between text-base text-gray-700 pt-4 lg:pt-0">
-      <li><a class="lg:p-4 py-3 px-0 block border-b-2 border-transparent hover:border-indigo-400" href="#"><img class="rounded-full w-10 h-10 border-2 border-transparent hover:border-indigo-400" src="" alt="Andy Leverenz"></a></li>
-      <li><a class="lg:p-4 py-3 px-0 block border-b-2 border-transparent hover:border-indigo-400" href="#"><img class="rounded-full w-10 h-10 border-2 border-transparent hover:border-indigo-400" src=""  alt="Andy Leverenz"></a></li>
-      <li><a class="lg:p-4 py-3 px-0 block border-b-2 border-transparent hover:border-indigo-400" href="#"> <img class="rounded-full w-10 h-10 border-2 border-transparent hover:border-indigo-400" src="" alt="Andy Leverenz"></a></li>
+      <li><a class="lg:p-4 py-3 px-0 block border-b-2 border-transparent hover:border-indigo-400" href="#" type="button" class="PDF" onclick="pdf()"><img class="rounded-full w-10 h-10 border-2 border-transparent hover:border-indigo-400" src="../img/print.png"  ></a></li>
+      <li><a class="lg:p-4 py-3 px-0 block border-b-2 border-transparent hover:border-indigo-400" href="#"><img class="rounded-full w-10 h-10 border-2 border-transparent hover:border-indigo-400" src=""  ></a></li>
+      <li><a class="lg:p-4 py-3 px-0 block border-b-2 border-transparent hover:border-indigo-400" href="#"> <img class="rounded-full w-10 h-10 border-2 border-transparent hover:border-indigo-400" src="" ></a></li>
     </ul>
   </nav>
-  <a href="#" class="lg:ml-4 flex items-center justify-start lg:mb-0 mb-4 pointer-cursor">
-    <img class="rounded-full w-10 h-10 border-2 border-transparent hover:border-indigo-400" src="https://img.icons8.com/color/48/000000/enter-2.png" alt="Andy Leverenz">
+  <a href="#" class="lg:ml-4 flex items-center justify-start lg:mb-0 mb-4 pointer-cursor"  onclick="window.location.href='index.html'">
+    <img class="rounded-full w-10 h-10 border-2 border-transparent hover:border-indigo-400" src="../img/exit.png" >
   </a>
 </div>
 </header>

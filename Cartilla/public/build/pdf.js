@@ -1,4 +1,8 @@
 
+
+function pdf(){ 
+
+
 var doc = new jsPDF('p', 'pt', 'letter');
 // Primer bloque
 
@@ -140,3 +144,4 @@ doc.rect(460, 520, 40, 40); // empty square
 doc.rect(500, 520, 40, 40); // empty square
 
 doc.save('Test.pdf');
+}
